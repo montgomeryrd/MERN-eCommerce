@@ -1,5 +1,9 @@
 const express = require('express');
+const dotenv = require('dotenv');
 const products = require('./data/products');
+const { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } = require('constants');
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
