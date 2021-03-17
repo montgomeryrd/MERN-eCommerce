@@ -7,9 +7,9 @@ const connectDB = async () => {
             useNewUrlParser: true,
             useCreateIndex: true
         });
-        console.log(`MondoDB Connection: ${connection.connection.host}`);
+        console.log(`MondoDB Connection: ${connection.connection.host}`.cyan.bold);
     } catch (error) {
-        console.error(`Error: ${error.message}`);
+        console.error(`Error: ${error.message}`.red.bold);
         process.exit(1);
     }
 }
