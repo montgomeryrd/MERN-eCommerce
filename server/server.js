@@ -12,11 +12,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-    res.send('works')
+    res.send('works');
 });
 
 app.get('/api/products', (req, res) => {
-    res.json(products)
+    res.json(products);
 });
 
 app.get('/api/products/:id', (req, res) => {
